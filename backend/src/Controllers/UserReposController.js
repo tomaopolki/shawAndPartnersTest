@@ -1,13 +1,17 @@
 const axios = require('axios');
+const { authToken } = require('../Services/config');
 
 module.exports = {
     async index(req, res){
         let username = req.params.username;
 
-        const response = await axios.get(`https://api.github.com/users/${username}/repos`);
-        let keys = ['id', 'name', 'html_url'];
+        const response = await axios.get(`https://api.github.com/users/${username}/repos`, {
+            headers: {
+              'Authorization': authToken
+            }
+          });
 
-        repos = response.data.map(o => keys.map(k => o[k]));
+        repos = response.data;
 
         res.json({
             repos

@@ -1,0 +1,40 @@
+td {
+    line-height: 25px;
+    border: 1px solid black;
+    
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+table{
+
+    background: #fff;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    padding: 30px;
+    border-collapse: collapse;
+  }
+  
+  table > p {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  table button.btn {
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 5px;
+    width: auto;
+    height: 42px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #f05a5b;
+    color: #fff;
+    cursor: pointer;
+  }
+  table button.btn:hover{
+    background: #e14f50;
+  }
+

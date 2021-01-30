@@ -6,7 +6,7 @@ module.exports = {
 
         const response = await axios.get(`https://api.github.com/users/${username}/repos`, {
             headers: {
-              'Authorization': process.env.AUTH_TOKEN
+              'Authorization': 'token' + process.env.AUTH_TOKEN
             }
           });
 

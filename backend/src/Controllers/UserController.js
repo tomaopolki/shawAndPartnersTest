@@ -1,5 +1,4 @@
 const axios = require('axios');
-const { authToken } = require('../Services/config');
 
 module.exports = {
     async index(req, res){
@@ -7,7 +6,7 @@ module.exports = {
         
         const response = await axios.get(`https://api.github.com/users?since=${since}`, {
             headers: {
-              'Authorization': authToken
+              'Authorization': process.env.AUTH_TOKEN
             }
           } );
         
@@ -27,7 +26,7 @@ module.exports = {
 
         const response = await axios.get(`https://api.github.com/users/${username}`, {
             headers: {
-              'Authorization': authToken
+              'Authorization': process.env.AUTH_TOKEN
             }
           });
         data = response.data;

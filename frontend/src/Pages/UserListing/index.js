@@ -25,8 +25,6 @@ export default function UserListing() {
             setSince(response.data.since);
     }
     
-    console.log(prev);
-    console.log(page);
     useEffect(() => {
         loadUsers(0);
     }, []);

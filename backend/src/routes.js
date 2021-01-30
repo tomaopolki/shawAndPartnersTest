@@ -1,7 +1,7 @@
 const express = require('express');
 
-const UserController = require('./controllers/UserController');
-const UserReposController = require('./controllers/UserReposController');
+const UserController = require('./Controllers/UserController');
+const UserReposController = require('./Controllers/UserReposController');
 const routes = express.Router();
 
 //Single User

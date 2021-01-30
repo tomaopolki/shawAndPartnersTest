@@ -36,7 +36,7 @@ export default function UserRepos(props){
                         </tr>
                     ))}
                 </tbody>
-                <Link to="/userlisting">
+                <Link to="/">
                     <button className="btn">Back</button>
                 </Link>        
             </table>

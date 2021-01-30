@@ -37,7 +37,7 @@ export default function UserListing() {
             <div className="content">
                 <ul className="user-list" >
                     {users.map(user => (
-                        <Link to={{pathname: `/userdetails/${user.login}`}}>
+                        <Link to={{pathname: `/${user.login}/userdetails`}}>
                             <li className="single-user" style={{cursor: 'pointer'}}  key={user.id}>
                                 <p>id: {user.id}</p>
                                 <p>login: {user.login}</p>

@@ -9,9 +9,9 @@ export default function Routes(){
         <BrowserRouter>
             <Switch>
 
-                <Route path="/userlisting" component={UserListing}/>
-                <Route path="/userdetails/:username" component={UserDetails}/>
-                <Route path="/userepos/:username" component={UserRepos}/>
+                <Route exact path="/" component={UserListing}/>
+                <Route exact path="/:username/userdetails" component={UserDetails}/>
+                <Route exact path="/:username/userepos" component={UserRepos}/>
 
             </Switch>
         </BrowserRouter>
